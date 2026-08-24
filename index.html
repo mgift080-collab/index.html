@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MoneyTools Hub - Free Money Calculators & Finance Tools</title>
+
+<meta name="description" content="Free money calculators, savings tools, investment calculators, profit calculators and practical money guides.">
+<meta name="robots" content="index, follow">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+font-family:Arial,sans-serif;
+background:#07111f;
+color:#e5e7eb;
+line-height:1.6;
+}
+
+a{text-decoration:none;color:inherit}
+
+header{
+background:linear-gradient(135deg,#064e3b,#16a34a);
+padding:45px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:clamp(32px,8vw,55px);
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+nav{
+position:sticky;
+top:0;
+z-index:999;
+background:#020617;
+border-bottom:1px solid #334155;
+overflow-x:auto;
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+display:flex;
+padding:10px;
+gap:8px;
+}
+
+.nav a{
+white-space:nowrap;
+padding:10px 14px;
+border-radius:8px;
+}
+
+.nav a:hover{
+background:#16a34a;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:18px;
+}
+
+.hero{
+margin:25px 0;
+padding:35px 22px;
+background:#172033;
+border-radius:18px;
+text-align:center;
+}
+
+.hero h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#cbd5e1;
+max-width:750px;
+margin:auto;
+}
+
+.buttons{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.btn{
+display:inline-block;
+background:#16a34a;
+padding:12px 18px;
+border-radius:9px;
+font-weight:bold;
+}
+
+.btn.secondary{
+background:#334155;
+}
+
+.ad{
+margin:25px 0;
+padding:22px;
+text-align:center;
+border:2px dashed #64748b;
+border-radius:12px;
+color:#94a3b8;
+background:#0f172a;
+}
+
+.section{
+margin:45px 0;
+scroll-margin-top:70px;
+}
+
+.section h2{
+font-size:28px;
+margin-bottom:8px;
+}
+
+.subtitle{
+color:#94a3b8;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.card{
+background:#172033;
+border:1px solid #334155;
+border-radius:15px;
+padding:20px;
+}
+
+.card h3{
+color:#4ade80;
+margin-bottom:10px;
+}
+
+.card p{
+color:#cbd5e1;
+}
+
+input,select{
+width:100%;
+padding:13px;
+margin-top:7px;
+border:0;
+border-radius:8px;
+font-size:16px;
+background:#f8fafc;
+color:#111827;
+}
+
+label{
+display:block;
+margin-top:12px;
+font-size:14px;
+color:#cbd5e1;
+}
+
+button{
+width:100%;
+padding:13px;
+margin-top:14px;
+border:0;
+border-radius:8px;
+background:#16a34a;
+color:white;
+font-weight:bold;
+font-size:16px;
+}
+
+button:hover{
+background:#15803d;
+}
+
+.result{
+margin-top:14px;
+padding:12px;
+border-radius:8px;
+background:#052e16;
+color:#86efac;
+font-weight:bold;
+}
+
+.guide{
+background:#172033;
+padding:24px;
+border-radius:15px;
+margin-bottom:18px;
+}
+
+.guide h3{
+color:#4ade80;
+margin-bottom:10px;
+}
+
+.guide p{
+margin-bottom:12px;
+color:#cbd5e1;
+}
+
+.list{
+padding-left:20px;
+color:#cbd5e1;
+}
+
+footer{
+margin-top:50px;
+background:#020617;
+padding:35px 20px;
+text-align:center;
+color:#94a3b8;
+}
+
+footer a{
+color:#4ade80;
+}
+
+@media(max-width:800px){
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+header{
+padding:35px 15px;
+}
+
+header h1{
+font-size:35px;
+}
+
+.container{
+padding:12px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero{
+padding:27px 17px;
+}
+
+.hero h2{
+font-size:27px;
+}
+
+.card{
+padding:17px;
+}
+
+.section h2{
+font-size:25px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>💰 MoneyTools Hub</h1>
+<p>Free tools and practical guides for smarter money decisions.</p>
+</header>
+
+<nav>
+<div class="nav">
+<a href="#home">Home</a>
+<a href="#tools">Tools</a>
+<a href="#guides">Guides</a>
+<a href="#hustles">Side Hustles</a>
+<a href="#affiliate">Resources</a>
+<a href="#about">About</a>
+</div>
+</nav>
+
+<main class="container">
+
+<section id="home" class="hero">
+<h2>Simple Money Tools. Completely Free.</h2>
+<p>
+Calculate profits, savings, investments and financial goals.
+Explore practical money ideas and learn how different financial calculations work.
+</p>
+
+<div class="buttons">
+<a class="btn" href="#tools">Use Calculators</a>
+<a class="btn secondary" href="#guides">Read Guides</a>
+</div>
+</section>
+
+<!-- AD PLACEHOLDER -->
+
+<div class="ad">
+ADVERTISEMENT
+<br>
+<small>This space can contain approved advertising after your site is accepted by an ad network.</small>
+</div>
+
+
+<!-- TOOLS -->
+
+<section id="tools" class="section">
+
+<h2>🧮 Free Money Calculators</h2>
+<p class="subtitle">
+Use these calculators for quick estimates.
+</p>
+
+<div class="grid">
+
+<!-- PROFIT -->
+
+<div class="card">
+<h3>💵 Profit Calculator</h3>
+
+<label>Cost Price (R)</label>
+<input id="cost" type="number" placeholder="500">
+
+<label>Selling Price (R)</label>
+<input id="sell" type="number" placeholder="800">
+
+<button onclick="profit()">Calculate</button>
+
+<div id="profitResult" class="result">
+Result appears here.
+</div>
+</div>
+
+
+<!-- SAVINGS -->
+
+<div class="card">
+<h3>💰 Savings Calculator</h3>
+
+<label>Monthly Saving (R)</label>
+<input id="monthly" type="number" placeholder="1000">
+
+<label>Number of Months</label>
+<input id="months" type="number" placeholder="12">
+
+<button onclick="savings()">Calculate</button>
+
+<div id="savingResult" class="result">
+Result appears here.
+</div>
+</div>
+
+
+<!-- INVESTMENT -->
+
+<div class="card">
+<h3>📈 Investment Calculator</h3>
+
+<label>Starting Amount (R)</label>
+<input id="principal" type="number" placeholder="10000">
+
+<label>Annual Return (%)</label>
+<input id="rate" type="number" placeholder="8">
+
+<label>Years</label>
+<input id="years" type="number" placeholder="5">
+
+<button onclick="investment()">Calculate</button>
+
+<div id="investmentResult" class="result">
+Result appears here.
+</div>
+</div>
+
+
+<!-- PERCENTAGE -->
+
+<div class="card">
+<h3>🧮 Percentage Calculator</h3>
+
+<label>Amount</label>
+<input id="amount" type="number" placeholder="500">
+
+<label>Percentage (%)</label>
+<input id="percentage" type="number" placeholder="20">
+
+<button onclick="percentage()">Calculate</button>
+
+<div id="percentageResult" class="result">
+Result appears here.
+</div>
+</div>
+
+
+<!-- GOAL -->
+
+<div class="card">
+<h3>🎯 Savings Goal</h3>
+
+<label>Target Amount (R)</label>
+<input id="target" type="number" placeholder="50000">
+
+<label>Current Savings (R)</label>
+<input id="current" type="number" placeholder="5000">
+
+<label>Months Remaining</label>
+<input id="goalMonths" type="number" placeholder="12">
+
+<button onclick="goal()">Calculate</button>
+
+<div id="goalResult" class="result">
+Result appears here.
+</div>
+</div>
+
+
+<!-- VAT -->
+
+<div class="card">
+<h3>🧾 VAT Calculator</h3>
+
+<label>Amount Before VAT (R)</label>
+<input id="vatAmount" type="number" placeholder="1000">
+
+<label>VAT Rate (%)</label>
+<input id="vatRate" type="number" value="15">
+
+<button onclick="vat()">Calculate</button>
+
+<div id="vatResult" class="result">
+Result appears here.
+</div>
+</div>
+
+</div>
+</section>
+
+
+<div class="ad">
+ADVERTISEMENT
+</div>
+
+
+<!-- GUIDES -->
+
+<section id="guides" class="section">
+
+<h2>📚 Money Guides</h2>
+<p class="subtitle">
+Simple explanations to help you understand common money calculations.
+</p>
+
+
+<article class="guide">
+
+<h3>How to Calculate Profit</h3>
+
+<p>
+Profit is the amount left after subtracting the cost of something from its
+selling price.
+</p>
+
+<p><strong>Formula:</strong> Profit = Selling Price − Cost Price.</p>
+
+<p>
+For example, if a product costs R500 and you sell it for R800, the gross
+profit is R300.
+</p>
+
+</article>
+
+
+<article class="guide">
+
+<h3>How to Build a Savings Goal</h3>
+
+<p>
+Start by choosing a specific amount you want to save and a deadline.
+</p>
+
+<ul class="list">
+<li>Choose your target amount.</li>
+<li>Subtract money you already have saved.</li>
+<li>Divide the remaining amount by the number of months available.</li>
+<li>Review your budget regularly.</li>
+</ul>
+
+</article>
+
+
+<article class="guide">
+
+<h3>What Is Compound Growth?</h3>
+
+<p>
+Compound growth happens when returns are added to an investment and future
+returns can then be earned on the increased balance.
+</p>
+
+<p>
+Actual investment returns vary and are never guaranteed. The calculator on
+this website is only an estimate.
+</p>
+
+</article>
+
+
+<article class="guide">
+
+<h3>How to Start a Side Hustle</h3>
+
+<p>
+A side hustle works best when it solves a real problem for a specific group
+of people.
+</p>
+
+<ul class="list">
+<li>Choose a skill or problem you understand.</li>
+<li>Research whether people actually need it.</li>
+<li>Start with a small version.</li>
+<li>Keep your costs low.</li>
+<li>Improve based on real customer feedback.</li>
+</ul>
+
+</article>
+
+</section>
+
+
+<!-- SIDE HUSTLES -->
+
+<section id="hustles" class="section">
+
+<h2>🔥 Side-Hustle Ideas</h2>
+<p class="subtitle">Ideas to research and potentially turn into income.</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>🌐 Websites</h3>
+<p>Build useful niche websites and monetize them with approved advertising and affiliate programs.</p>
+</div>
+
+<div class="card">
+<h3>🔗 Affiliate Marketing</h3>
+<p>Recommend relevant products or services through legitimate affiliate programs.</p>
+</div>
+
+<div class="card">
+<h3>📱 Content Creation</h3>
+<p>Create useful videos or educational content and build an audience.</p>
+</div>
+
+<div class="card">
+<h3>🎨 Digital Products</h3>
+<p>Create templates, guides, spreadsheets or educational resources.</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI Tools</h3>
+<p>Create simple online tools that solve specific problems.</p>
+</div>
+
+<div class="card">
+<h3>📊 Data Tools</h3>
+<p>Create calculators and dashboards that people can use repeatedly.</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- AFFILIATE -->
+
+<section id="affiliate" class="section">
+
+<h2>🔗 Recommended Resources</h2>
+
+<div class="card">
+
+<p>
+This section is reserved for relevant products and services from legitimate
+affiliate programs.
+</p>
+
+<br>
+
+<p>
+<strong>Affiliate disclosure:</strong>
+If affiliate links are added, this website may receive a commission from
+qualifying purchases. The visitor's price may vary according to the
+affiliate program.
+</p>
+
+<br>
+
+<div class="ad">
+AFFILIATE RESOURCE SPACE
+<br>
+<small>Add approved affiliate links here later.</small>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+<h2>ℹ️ About MoneyTools Hub</h2>
+
+<div class="card">
+
+<p>
+MoneyTools Hub provides free calculators and educational resources designed
+to make common money calculations easier to understand.
+</p>
+
+<br>
+
+<p>
+The website is intended for educational and informational purposes.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PRIVACY -->
+
+<section class="section">
+
+<h2>🔐 Privacy</h2>
+
+<div class="card">
+
+<p>
+This website may eventually use advertising, analytics or affiliate services.
+Those services may use cookies or similar technologies according to their
+own policies.
+</p>
+
+<br>
+
+<p>
+If advertising services are added, the site's privacy information should be
+updated to accurately explain the services being used.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- DISCLAIMER -->
+
+<section class="section">
+
+<h2>⚠️ Disclaimer</h2>
+
+<div class="card">
+
+<p>
+The calculators provide estimates based on information entered by the user.
+They are not financial, investment, tax or legal advice.
+</p>
+
+<br>
+
+<p>
+Investment returns are not guaranteed. Always research important financial
+decisions carefully and consider consulting a qualified professional where
+appropriate.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>© 2026 MoneyTools Hub</p>
+
+<p>
+Free calculators • Money education • Financial tools
+</p>
+
+<br>
+
+<a href="#home">Back to top ↑</a>
+
+</footer>
+
+
+<script>
+
+/* PROFIT */
+
+function profit(){
+
+let cost=Number(document.getElementById("cost").value);
+let sell=Number(document.getElementById("sell").value);
+
+if(cost<0 || sell<0){
+document.getElementById("profitResult").innerHTML="Enter valid amounts.";
+return;
+}
+
+let result=sell-cost;
+
+document.getElementById("profitResult").innerHTML=
+"Profit: R "+result.toFixed(2);
+}
+
+
+/* SAVINGS */
+
+function savings(){
+
+let monthly=Number(document.getElementById("monthly").value);
+let months=Number(document.getElementById("months").value);
+
+if(monthly<=0 || months<=0){
+document.getElementById("savingResult").innerHTML="Enter valid values.";
+return;
+}
+
+let total=monthly*months;
+
+document.getElementById("savingResult").innerHTML=
+"Total: R "+total.toFixed(2);
+}
+
+
+/* INVESTMENT */
+
+function investment(){
+
+let principal=Number(document.getElementById("principal").value);
+let rate=Number(document.getElementById("rate").value);
+let years=Number(document.getElementById("years").value);
+
+if(principal<=0 || years<=0){
+document.getElementById("investmentResult").innerHTML=
+"Enter valid values.";
+return;
+}
+
+let finalValue=
+principal*Math.pow(1+rate/100,years);
+
+let growth=finalValue-principal;
+
+document.getElementById("investmentResult").innerHTML=
+"Estimated value: R "+finalValue.toFixed(2)+
+"<br>Estimated growth: R "+growth.toFixed(2);
+}
+
+
+/* PERCENTAGE */
+
+function percentage(){
+
+let amount=Number(document.getElementById("amount").value);
+let percentage=Number(document.getElementById("percentage").value);
+
+if(isNaN(amount)||isNaN(percentage)){
+document.getElementById("percentageResult").innerHTML=
+"Enter valid values.";
+return;
+}
+
+let result=amount*percentage/100;
+
+document.getElementById("percentageResult").innerHTML=
+percentage+"% = R "+result.toFixed(2);
+}
+
+
+/* SAVINGS GOAL */
+
+function goal(){
+
+let target=Number(document.getElementById("target").value);
+let current=Number(document.getElementById("current").value);
+let months=Number(document.getElementById("goalMonths").value);
+
+if(target<=0 || months<=0){
+document.getElementById("goalResult").innerHTML=
+"Enter valid values.";
+return;
+}
+
+let remaining=Math.max(target-current,0);
+let monthly=remaining/months;
+
+document.getElementById("goalResult").innerHTML=
+"Remaining: R "+remaining.toFixed(2)+
+"<br>Monthly target: R "+monthly.toFixed(2);
+}
+
+
+/* VAT */
+
+function vat(){
+
+let amount=Number(document.getElementById("vatAmount").value);
+let rate=Number(document.getElementById("vatRate").value);
+
+if(amount<0 || rate<0){
+document.getElementById("vatResult").innerHTML=
+"Enter valid values.";
+return;
+}
+
+let tax=amount*rate/100;
+let total=amount+tax;
+
+document.getElementById("vatResult").innerHTML=
+"VAT: R "+tax.toFixed(2)+
+"<br>Total: R "+total.toFixed(2);
+}
+
+</script>
+
+</body>
+</html>
